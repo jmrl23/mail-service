@@ -12,13 +12,11 @@ yarn # or npm install
 
 ## Commands
 
-| Command                  | Description                                       |
-| ------------------------ | ------------------------------------------------- |
-| yarn run build           | build                                             |
-| yarn run start           | start (should run build first)                    |
-| yarn run start:dev       | start in development mode (using swc)             |
-| yarn run start:prod      | start in production mode (should run build first) |
-| yarn run format          | format code (using prettier)                      |
-| yarn run lint            | lint code (using eslint)                          |
-| yarn run prisma db push  | initialize database using prisma                  |
-| yarn run prisma generate | generate schema types                             |
+| Command             | Description                                       |
+| ------------------- | ------------------------------------------------- |
+| yarn run build      | build                                             |
+| yarn run start      | start (should run build first)                    |
+| yarn run start:dev  | start in development mode (using swc)             |
+| yarn run start:prod | start in production mode (should run build first) |
+| yarn run format     | format code (using prettier)                      |
+| yarn run lint       | lint code (using eslint)                          |
