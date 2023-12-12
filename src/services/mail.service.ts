@@ -7,8 +7,8 @@ import {
 import { CacheService } from './cache.service';
 import { google } from 'googleapis';
 import { caching } from 'cache-manager';
-import env from 'env-var';
 import { MailSendDto } from '../dtos/MailSend.dto';
+import env from 'env-var';
 
 export class MailService {
   private static instance: MailService;
@@ -38,7 +38,6 @@ export class MailService {
       const oauth2Client = new google.auth.OAuth2(
         env.get('GOOGLE_CLIENT_ID').asString(),
         env.get('GOOGLE_CLIENT_SECRET').asString(),
-        env.get('GOOGLE_REFRESH_TOKEN').asString(),
       );
 
       oauth2Client.setCredentials({
